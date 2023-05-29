@@ -1,5 +1,5 @@
 Car API:
-This repository contains an API for managing cars, created as a project for the Node.js and MongoDB Track at Cubos Academy.
+This repository contains an API for managing cars, created as the first project project for the Node.js and MongoDB Track at Cubos Academy.
 
 Description:
 The Car API is a Node.js application that provides a set of endpoints to perform CRUD operations on car data. It allows users to create, retrieve, update, and delete car records. The API is built using modern technologies and follows RESTful principles.
@@ -14,15 +14,16 @@ Delete a car record.
 Technologies Used:
 The following technologies were used in the development of this API:
 Node.js;
+Typescript;
 Express.js;
-MongoDB;
+PostgreSQL;
 RESTful principles.
 
 Getting Started:
 To get started with the Car API, follow the steps below:
 Clone the repository: git clone https://github.com/your-username/car-api.git ;
 Install the dependencies: npm install;
-Configure the MongoDB connection in the .env file;
+Configure the PostgreSQL connection in the .env file;
 Run the application: npm start;
 Access the API at http://localhost:3000 .
 
