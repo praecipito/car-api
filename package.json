@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "nodemon --exec ts-node ./src/index.ts",
     "build": "rm -rf ./dist && tsc",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "linter": "echo \"Error: no linter specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc . --noEmit"
   },
   "repository": {
     "type": "git",

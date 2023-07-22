@@ -1,0 +1,21 @@
+name: Quality and Assurance
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          node-version: 20.x
+      - name: Install dependencies
+        run: npm install
+      - name: Linting
+        run: npm run lint
+      - name: Run tests
+        run: npm test
+      - name: TSC Check
+        run: npm run tsc
