@@ -1,4 +1,4 @@
-import connection from "knex";
+import connection from 'knex'
 
 export const knex = connection({
   client: 'pg',

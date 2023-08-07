@@ -2,7 +2,8 @@ name: Quality and Assurance
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   build:
