@@ -1,7 +1,8 @@
 FROM node:16-alpine
-ENV NODE_ENV=production
+# ENV NODE_ENV=production
 WORKDIR /app
-COPY [".", "."]
-RUN npm install --silent
+EXPOSE 3000
+COPY . .
+RUN npm ci
 RUN npm run build
-RUN npm start
+ENTRYPOINT npm start
